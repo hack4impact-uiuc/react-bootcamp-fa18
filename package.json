@@ -4,17 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hack4impact-uiuc/react-bootcamp-fa18.git"
-  },
-  "keywords": [],
   "author": "Aria <arshiam2828@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hack4impact-uiuc/react-bootcamp-fa18/issues"
-  },
   "homepage": "https://github.com/hack4impact-uiuc/react-bootcamp-fa18#readme"
 }

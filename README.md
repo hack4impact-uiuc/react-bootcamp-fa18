@@ -33,6 +33,9 @@ The nice thing about react is that you can modify the state without renrendering
 ```Javascript
  <button onClick={this.addParameter}> Add todo</button>
 ```
+
+## Modifying State
+
 Once we have defined the button, we have to write the function that handles what to do. We want to take the previous list of todos, add the new todo, and then update the state. This is written below. 
 
 ```Javascript

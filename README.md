@@ -3,8 +3,8 @@
 ## HTML
 ### What is HTML?
 HTML stands for Hyper Text Markup Language. It describes the structure of a static
-web page and its contents using markup, or HTML tags. For example, the <body> tag
-represents the start of the content of an html page and the <head> tag signifies
+web page and its contents using markup, or HTML tags. For example, the '<body>' tag
+represents the start of the content of an html page and the '<head>' tag signifies
 the location of site meta data.
 
 When a website is visited, the static HTML file for the page is downloaded,
@@ -18,45 +18,45 @@ There are three different types of HTML tags:
 
 **File Tags** provide the structure of the web page and don't add any visible content
 to the site. Some examples include:
-  * <!DOCTYPE> - required at the start of any HTML file. Defines that the file is
+  * '<!DOCTYPE>' - required at the start of any HTML file. Defines that the file is
   using HTML
-  * <body> - signifies the start of the content of the page
+  * '<body>' - signifies the start of the content of the page
 
 **Block Tags** create a new line on the web page and takes up the full width available.
 Some examples of block tags include:
-  * <p> - labels a paragraph element
-  * <h1> - labels a large header
+  * '<p>' - labels a paragraph element
+  * '<h1>' - labels a large header
 
 **Inline Tags** don't normally create a new line on the web page. Instead, these tags
 usually take the width of the element that it surrounds and applies its effects.
 Some examples include:
-  * <i> - adds italics to a text element
-  * <strong> - makes a text element bold
+  * '<i>' - adds italics to a text element
+  * '<strong>' - makes a text element bold
 
 **_NOTE:_** Some tags in HTML are self closing. This means that, unlike elements
-like <p> and <h1> that come in pairs (open and closing tag), self closing elements
-open and close on one line. One element that has this behavior is the <img /> tag.
+like '<p>' and '<h1>' that come in pairs (open and closing tag), self closing elements
+open and close on one line. One element that has this behavior is the '<img />' tag.
 The tags that are present in this README will only have the opening tag, and self
 closing tags will have the closing slash.
 
 ### Creating an HTML file
 There are four crucial tags that are needed within an HTML file. These tags are:
-  * <!DOCTYPE html> - Needed at the start of any HTML file, the DOCTYPE tag
+  * '<!DOCTYPE html>' - Needed at the start of any HTML file, the DOCTYPE tag
   defines that the file is using HTML5.
-  * <html> - The html tag represents the root element of an html page. It's also
+  * '<html>' - The html tag represents the root element of an html page. It's also
   the "base" tag and contains the rest of the elements in an HTML file.
-  * <head> - The head tag, although not required to be in an HTML file, contains
+  * '<head>' - The head tag, although not required to be in an HTML file, contains
   meta information about the document such as the title of the page, paths to
   CSS files, etc.
-  * <body> - The body tag contains the visible page content. All other elements/
+  * '<body>' - The body tag contains the visible page content. All other elements/
   content that will be presented to the user will be within the body tag.
 
 ### What are some useful elements/tags?
-  * <div> - the div tag doesn't really add any visible content to the web page.
+  * '<div>' - the div tag doesn't really add any visible content to the web page.
   It mainly defines a division or section in an HTML document.
-  * <h1 - h6> - defines headers of different sizes, with h1 being the largest header.
-  * <img/> - adds an image, specified by the src attribute, to the webpage.
-  * <button> - adds a clickable button to the webpage.
+  * '<h1 - h6>' - defines headers of different sizes, with h1 being the largest header.
+  * '<img/>' - adds an image, specified by the src attribute, to the webpage.
+  * '<button>' - adds a clickable button to the webpage.
 
 ### What is Bootstrap?
 Bootstrap is an open-source frontend framework for designing websites. It contains

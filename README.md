@@ -1,5 +1,20 @@
 # react-bootcamp-fa18
 
+## Requirements
+* node version 8.x
+* npm version 5.x
+
+Install node and npm [here](https://nodejs.org/en/download/).
+
+Check if you have the correct versions by running the following commands in your terminal:
+```
+node -v
+```
+```
+npm -v
+```
+
+## Setup
 
 ### What is npm
 
@@ -26,6 +41,10 @@ For instance, if I type into command line...
 npm run start
 ```
 It will look at the package.json file, find the associated command for that script, and execute it, which in this case is ```node src/index.js```
+
+### What is Javascript?
+
+Cancer
 
 
 

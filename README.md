@@ -170,8 +170,6 @@ Maps take in an array of elements and transform it to another array of elements.
 
 The easiest way to understand is looking through an example. 
 
-The function below takes in an array of numbers, and wants to add the number to the new list only if the number matches the index. 
-
 In the example below we want to multiply every number in the array by 2. A map statement allows us to do this is a much more readable fashion. 
 ```Javascript
 // With mapping
@@ -201,7 +199,6 @@ let mappedArray =  array.filter(elem => elem % 3 === 0)
 ```
 
 Reduce functions allow you to take an array and returns a single value. It evaulates each element on the array one at  a time, using the last value to get a new value. 
-
 
 ```Javascript
 // Without reduce

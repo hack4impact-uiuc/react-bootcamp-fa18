@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import ToDoListItem from './components/toDoListItem'
+import ToDoListItem from "./components/toDoListItem";
 
 class App extends Component {
   state = {
@@ -8,13 +8,20 @@ class App extends Component {
     todos: ["Walk to latea", "See Megha at latea", "Get boba"]
   };
 
+  addParameter = () => {
+    this.setState({
+      todos: [...this.state.todos, "Get more boba"]
+    })
+  };
+
   render() {
     return (
       <div>
         <h1>{this.state.todoListTitle}</h1>
         {this.state.todos.map(x => (
-          <ToDoListItem todo={x}></ToDoListItem>
+          <ToDoListItem todo={x} />
         ))}
+        <button onClick={this.addParameter}> Add todo</button>
       </div>
     );
   }

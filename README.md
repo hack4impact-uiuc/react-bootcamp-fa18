@@ -44,6 +44,12 @@ It will look at the package.json file, find the associated command for that scri
 
 ### What is Javascript?
 
+### Print Statements
+In javascript, print is just console.log, which is a function which will print the arguments.
+```Javascript
+    console.log("Hello World");
+```
+
 ### Variables
 Const implies that a variable is immutable, meaning we can never change it again. Let on the other hand means we can change the value of that variable. 
 

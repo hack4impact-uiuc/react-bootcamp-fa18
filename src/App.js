@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import ToDoListItem from "./components/toDoListItem";
+import {get} from "./utils/api"
 
 class App extends Component {
   state = {
@@ -33,6 +34,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        {console.log(get())}
         <h1>{this.state.todoListTitle}</h1>
         {console.log('test' + this.state.test ? "hi2" : "hi" )}
         {this.state.todos.map(x => (

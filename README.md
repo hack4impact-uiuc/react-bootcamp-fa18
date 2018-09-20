@@ -50,4 +50,4 @@ code for a single page web application can theoretically be placed in the index.
 Stylistically, however, I'm sure you understand why thats a very, very bad idea.
 Instead, to take full advantage of React's features, especially with components
 and reusability, pages and other elements are further split and then synthesized
-into a comprehensive application and then injected into the DOM via the root element.
+into a comprehensive application that finally gets injected into the DOM via the root element.

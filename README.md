@@ -18,7 +18,7 @@ updating the actual DOM in as few steps as possible.
 JSX stands for Javascript Extension and is a React extension that permits writing
 Javascript that looks like HTML. For example, a simple component or the App.js may
 have the following code:
-```
+```javascript
 class App extends Component {
   render() {
     return(
@@ -30,7 +30,7 @@ class App extends Component {
 
 Although the Javascript code includes HTML, the HTML code is actually Javascript.
 After the code is translated, the Javascript for the App Component will be:
-```
+```javascript
 class App extends Component {
   render() {
     return(

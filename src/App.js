@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import fetch from 'node-fetch'
 
 import ToDoListItem from "./components/toDoListItem";
-import {getAllTodos} from "./utils/api"
-
-
 
 class App extends Component {
   

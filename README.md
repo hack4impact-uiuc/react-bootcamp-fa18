@@ -36,7 +36,7 @@ componentDidCatch()
 
 ## Examples
 
-Inside of App.js we can add the function, which will print out to the console. whenever that component is mounted.
+Inside of App.js we can add the function, which will print out to the console whenever that component is mounted.
 
 ```Javascript
 componentDidMount() {

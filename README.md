@@ -18,11 +18,11 @@ npm -v
 
 ### What is npm
 
-Npm stands for node package managers, meaning it helps you download and import dependencies. It does this trhough a file called package.json.
+Npm stands for node package managers, meaning it helps you download and import dependencies. It does this through a file called package.json.
 
 ### What is package.json? 
 
-This defines all the metadata for the project, meaning it keeps track of all your dependencies and scripts. You can autogenerate one my typing ```npm init``` in command line, and answering all the questionsx
+This defines all the metadata for the project, meaning it keeps track of all your dependencies and scripts. You can autogenerate one by typing ```npm init``` in command line, and answering all the questions
 
 ### How do you add a startup script?
 The file ```package.json``` is written in a json format, meaning there are keys and values. Look at this segment from package.json

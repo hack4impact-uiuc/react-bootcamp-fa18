@@ -4,15 +4,49 @@
 ![Test Image 1](images/lifecycle.png)
 
 
-Currently, the only methdo we are using is the render method, but theyre a lot more methods build into a component. 
+All Lifecycle Methods that exist
 
-You can think of it as three stages:
+##Initialization 
+### This is when the component sets up its state and inital props.
 
-Initialization: This is when the component sets up its state and inital props.
 
-Mounting: The component is prepared with its basic needs, so its ready to mount in the browser DOM. There are two lifecycle methods you can access at this stage: 
-* componentWillMount which will execute right beofre the react component is mounted. This is used for initializing more states and props. 
+## Mounting
+### The component is prepared with its basic needs, so its ready to mount in the browser DOM. 
+* componentWillMount  
+* render
+* componentDidMount  
 
-* Render, which mounst the component onto the browser. 
+## Updating 
+### Whenever the user interacts with the website and the state/props change
+* componentWillReceiveProps  
+* shouldComponentUpdate
+* componentWillUpdate
+* render
+* componentDidUpdate  
 
-* Component did Mount, which is right after the 
+## Unmounting
+### When the component is no longer being rendered. 
+* componentWillUnmount
+
+## More advanced lifecycle Methods
+static getDerivedStateFromProps() 
+getSnapshotBeforeUpdate() 
+componentDidCatch()
+
+
+Let's go over a couple of them 
+
+Inside of App.js we can add the function, which will print out to the console. whenever that component is mounted.
+
+```Javascript
+componentDidMount() {
+    console.log("componentDidMount")
+  }
+```
+
+After adding this one, whenever we type anything into the text box to add a new todo, the state changes, so this function gets called. 
+```Javascript
+  componentDidUpdate() {
+    console.log("componentDidUpdate")
+  }
+```

@@ -9,6 +9,14 @@ class App extends Component {
     newTodo: ""
   };
 
+  componentDidMount() {
+    console.log("componentDidMount")
+  }
+
+  componentDidUpdate() {
+    console.log("componentDidUpdate")
+  }
+
   handleChange = event => {
     this.setState({ newTodo: event.target.value });
   };
@@ -26,8 +34,9 @@ class App extends Component {
     return (
       <div>
         <h1>{this.state.todoListTitle}</h1>
+        {console.log('test' + this.state.test ? "hi2" : "hi" )}
         {this.state.todos.map(x => (
-          <ToDoListItem todo={x} key={x} />
+          <ToDoListItem todo={this.state.test ? "j" : x} key={x} />
         ))}
         <input
           type="text"

@@ -5,10 +5,8 @@ class App extends Component {
     return (
       <div>
         <h1>Todo List</h1>
-        <ol>
-          // Add the following elements to the todolist:
-          // Walk to latea, See Megha at latea, Get boba, 5x Get more boba
-        </ol>
+        // Add the following elements to the todolist:
+        // Walk to latea, See Megha at latea, Get boba, 5x Get more boba
       </div>
     );
   }

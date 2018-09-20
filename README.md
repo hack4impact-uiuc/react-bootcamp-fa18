@@ -43,3 +43,11 @@ class App extends Component {
 Thus, JSX merely allows us to write Javascript that looks like HTML, which proves to
 be beneficial especially with visualizing the DOM and being able to write more familiar
 code within our components.
+
+### Piecing together the App
+The entry point for React applications is the index.js file. As a result, all of the
+code for a single page web application can theoretically be placed in the index.js.
+Stylistically, however, I'm sure you understand why thats a very, very bad idea.
+Instead, to take full advantage of React's features, especially with components
+and reusability, pages and other elements are further split and then synthesized
+into a comprehensive application and then injected into the DOM via the root element.

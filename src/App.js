@@ -1,51 +1,32 @@
 import React, { Component } from "react";
+import fetch from 'node-fetch'
 
 import ToDoListItem from "./components/toDoListItem";
-import {get} from "./utils/api"
+import {getAllTodos} from "./utils/api"
+
+
 
 class App extends Component {
-  state = {
-    todoListTitle: "My Todo List",
-    todos: ["Walk to latea", "See Megha at latea", "Get boba"],
-    newTodo: ""
-  };
-
-  componentDidMount() {
-    console.log("componentDidMount")
+  
+  constructor() {
+    super();
+    this.state = {
+      data: []
+    };
   }
 
-  componentDidUpdate() {
-    console.log("componentDidUpdate")
+  async componentDidMount() {
+    const response = await fetch(`https://api.coinmarketcap.com/v1/ticker/?limit=10`);
+    const json = await response.json();
+    this.setState({ data: json });
   }
-
-  handleChange = event => {
-    this.setState({ newTodo: event.target.value });
-  };
-
-  handleSubmit = event => {
-    this.setState({
-      todos: [...this.state.todos, this.state.newTodo]
-    });
-    this.setState({
-      newTodo : ""
-    });
-  };
 
   render() {
     return (
       <div>
-        {console.log(get())}
-        <h1>{this.state.todoListTitle}</h1>
-        {console.log('test' + this.state.test ? "hi2" : "hi" )}
-        {this.state.todos.map(x => (
-          <ToDoListItem todo={this.state.test ? "j" : x} key={x} />
+        {this.state.data.map(x => (
+          <ToDoListItem todo={x.name} key={x.name} />
         ))}
-        <input
-          type="text"
-          value={this.state.newTodo}
-          onChange={this.handleChange}
-        />
-        <button onClick={this.handleSubmit}> + </button>
       </div>
     );
   }

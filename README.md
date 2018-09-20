@@ -34,7 +34,7 @@ getSnapshotBeforeUpdate()
 componentDidCatch()
 
 
-Let's go over a couple of them 
+## Examples
 
 Inside of App.js we can add the function, which will print out to the console. whenever that component is mounted.
 

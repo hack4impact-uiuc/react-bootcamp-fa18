@@ -5,7 +5,7 @@
 
 Every react component has a state is a set of variables that determines how a compoenent renders and behaves. It is scoped so that only the component has access to those variables. To share variables betweeen componenets, you would use props. 
 
-Here's an analogy to explain it. You can think of a thermometer is a component, where the state is the temperapture it shows. If you stick it in a freezer, the temperature will go down. . If you stick it on the stove, the temperature will go up. The component will never change, its still a thermomemeter, but its state will change depending on where you put it. 
+Here's an analogy to explain it. You can think of a thermometer is a component, where the state is the temperapture it shows. If you stick it in a freezer, the temperature will go down. If you stick it on the stove, the temperature will go up. The component will never change, its still a thermomemeter, but its state will change depending on where you put it. 
 
 ## How to get items from state to display. 
 

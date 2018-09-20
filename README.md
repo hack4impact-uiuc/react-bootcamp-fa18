@@ -6,7 +6,7 @@
 
 All Lifecycle Methods that exist
 
-##Initialization 
+## Initialization 
 ### This is when the component sets up its state and inital props.
 
 

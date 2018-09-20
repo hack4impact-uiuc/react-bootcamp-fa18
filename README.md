@@ -15,3 +15,31 @@ calculating the minimal difference between the virtual and real document object 
 updating the actual DOM in as few steps as possible.
 
 ### What is JSX?
+JSX stands for Javascript Extension and is a React extension that permits writing
+Javascript that looks like HTML. For example, a simple component or the App.js may
+have the following code:
+```
+class App extends Component {
+  render() {
+    return(
+      <h1 className="h1-large">Hello World!</h1>
+    );
+  }
+}
+```
+
+Although the Javascript code includes HTML, the HTML code is actually Javascript.
+After the code is translated, the Javascript for the App Component will be:
+```
+class App extends Component {
+  render() {
+    return(
+      React.createElement('h1', {className: 'h1-large'}, 'Hello World!')
+    );
+  }
+}
+```
+
+Thus, JSX merely allows us to write Javascript that looks like HTML, which proves to
+be beneficial especially with visualizing the DOM and being able to write more familiar
+code within our components.

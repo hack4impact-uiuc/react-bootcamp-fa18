@@ -17,7 +17,7 @@ The first thing you would do is define the elements in state. Inside your compoe
   };
 ```
 
-This defines the title of the todo list in state. Insider the render method, in the jsx, you can execute commands as long as they are in curly braces. So if I wanted to access the title from state, I would say ```{this.state.todoListTitle}```` inside of the render method. Look at the example below. 
+This defines the title of the todo list in state. Insider the render method, in the jsx, you can execute commands as long as they are in curly braces. So if I wanted to access the title from state, I would say ```{this.state.todoListTitle}``` inside of the render method. Look at the example below. 
 ```Javascript
 render() {
     return (
